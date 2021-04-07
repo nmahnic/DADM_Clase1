@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnUp.setOnClickListener {
-            tvMainSize = tvMainSize + 1.0F
+            tvMainSize += 1.0F
             Log.d("NM", "UP: ${tvMainSize}")
             tvMain.textSize = tvMainSize
         }
 
         btnDown.setOnClickListener {
-            tvMainSize = tvMainSize - 1.0F
+            tvMainSize -= 1.0F
             Log.d("NM", "DOWN: ${tvMainSize}")
             tvMain.textSize = tvMainSize
         }
